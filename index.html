@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
     <title>Tri Dragon Programming</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="header"></div>
-    <p>Still under construction! Check back soon!</p>
-    <a href="https://www.github.com/Tri-Dragon-Programming">Github</a>
-  </body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header-styles.css" />
+</head>
+<body>
+
+    <div id="header">
+        <div style="width: 50%; height: 100px;">
+            <a href="index.html">
+                <h1 id="header-text">Tri Dragon Programming</h1>
+            </a>
+        </div>
+        <div id="header-menu">
+            <div id="projects-menu-hover">
+                <a id="projects-menu" href="./Projects.html">Projects</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-content">
+        <h1>Welcome!</h1>
+        <p>Still under construction! Check back soon!</p>
+        <a href="https://www.github.com/Tri-Dragon-Programming">Github link</a>
+
+    </div>
+
+
+    <script>
+        var projMenu = document.getElementById("projects-menu-hover");
+
+        projMenu.addEventListener("mouseover", () => {
+            projMenu.style.background = "green";
+            var dropDownMenu = document.createElement("div");
+            dropDownMenu.style.border = "black solid 1px";
+
+            //projMenu.appendChild(dropDownMenu);
+        });
+
+        projMenu.addEventListener("mouseleave", () => {
+            projMenu.style.background = "initial";
+        });
+
+    </script>
+
+</body>
 </html>

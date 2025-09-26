@@ -1,0 +1,48 @@
+﻿#header {
+    display: grid;
+    background-color: #2d2d2d;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    z-index: 5;
+}
+
+#header-text {
+    padding-left: 75px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: goldenrod;
+}
+
+#header-menu {
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    padding-right: 20px;
+    justify-self: end;
+    color: darkgoldenrod;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#projects-menu {
+}
+
+#projects-menu-hover {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#projects-menu-hover:hover {
+    background-color: green;
+}
