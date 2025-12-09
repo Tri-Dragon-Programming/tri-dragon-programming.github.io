@@ -13,10 +13,17 @@ a {
     text-decoration: none;
 }
 
+.button {
+    padding: 10px;
+    background-color: darkgoldenrod;
+    color: black;
+    border-radius: 10px
+}
+
 #main-content {
     padding: 10px;
     position: absolute;
-    top: 100px;
+    top: 60px;
     animation-name: fall;
     animation-duration: 2s;
 }
